@@ -1327,7 +1327,8 @@ textarea:-ms-input-placeholder {
   height: 600px;
   object-fit: cover;
 }
-.p3 .container {
+.p3 .container,
+.p2 .container {
   max-width: 1000px;
 }
 .p3 {
@@ -1367,6 +1368,21 @@ textarea:-ms-input-placeholder {
 .p3 .question h3 span {
   color: #000;
 }
+.tech .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.tech .head .link,
+.p2 .link {
+  margin: unset !important;
+  background-color: rgba(34, 102, 155, 1);
+  color: #fff !important;
+}
+.tech .head .link i {
+  margin-right: 10px;
+}
 /* Responsive: wrap on narrow screens */
 @media (max-width: 420px) {
   .pagination {
@@ -1376,6 +1392,12 @@ textarea:-ms-input-placeholder {
   .ellipsis {
     display: none;
   } /* hide ellipsis on tiny screens */
+  .tech .head {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
