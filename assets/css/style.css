@@ -380,6 +380,7 @@ textarea:-ms-input-placeholder {
 .services-2 .service {
   border: 1px solid rgba(12, 72, 109, 0.1);
   padding: 20px;
+  margin-bottom: 30px;
 }
 .services-2 .service .image {
   width: 100%;
@@ -1230,6 +1231,39 @@ textarea:-ms-input-placeholder {
   transform: rotate(180deg);
 }
 
+.main-services h1 {
+  line-height: 70px;
+}
+.main-services input {
+  border-radius: 10px;
+}
+.main-services .image::after {
+  display: none;
+}
+.main-services .pattern {
+  right: unset;
+  left: 100px;
+  top: 50%;
+}
+.main-services .col:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.main-services .image img {
+  height: 600px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.main-services {
+  margin-bottom: 170px;
+}
+.gallery {
+  margin: 150px 0;
+}
+.gallery .row .col {
+  margin-bottom: 40px;
+}
 /* Responsive: wrap on narrow screens */
 @media (max-width: 420px) {
   .pagination {
@@ -1299,8 +1333,14 @@ textarea:-ms-input-placeholder {
   .contact-form form,
   .about-header .images img,
   .locations .location,
-  .blogs-3 .service {
+  .blogs-3 .service,
+  .services-2 .service .image,
+  .gallery .row .col img {
     border-radius: 25px;
+  }
+  .services-2 .head h1,
+  .contact-us h1 {
+    font-size: 28px;
   }
   .blogs-3 .service {
     margin-bottom: 30px;
@@ -1354,6 +1394,12 @@ textarea:-ms-input-placeholder {
   .contact-form form {
     margin: -50px auto 100px;
     border-radius: 48px;
+  }
+  .main-services .row {
+    flex-direction: column-reverse;
+  }
+  .main-services .image img {
+    border-radius: 40px;
   }
 }
 
